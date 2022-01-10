@@ -4,7 +4,7 @@ import numpy as np
 
 # Encode every combination of bases into base-4, providing reference to location in later acids list
 # A = 3, C = 2, U = 1, G = 0
-bases = ['G', 'U', 'C', 'A']
+bases = ['G', 'T', 'C', 'A']
 
 encoding = ((7, 3), (7, 0), (7, 1), (7, 2),
             (19, 3), (19, 0), (19, 1), (19, 2),

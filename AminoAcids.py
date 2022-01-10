@@ -15,7 +15,7 @@ def aminoacids(inputcode):
         for j in range(0, 3):
             if inputcode[3 * i + 2 - j] == 'G':
                 pass
-            elif inputcode[3 * i + 2 - j] == 'U':
+            elif inputcode[3 * i + 2 - j] == 'U' or inputcode[3 * i + 2 - j] == 'T':
                 total += (4**j)
             elif inputcode[3 * i + 2 - j] == 'C':
                 total += (4**j)*2
@@ -98,5 +98,5 @@ def aminoacids(inputcode):
 
 
 # # Example use:
-# inputcode = 'AACGUUUGACCCGCUAUAUUCUUCACUACUACU'
-# aminoacids(inputcode)
+inputcode = 'AACGUUGACCCGCUAUAUUCUUCACUACUACU'
+aminoacids(inputcode)
